@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { useState } from "react";
 import './App.css';
+// Components
+import LevelInfo from './components/LevelInfo';
+import Choice from './components/Choice';
 
 function App() {
-  return (
+    // Functions
+    const[question, setQuestion] = useState(""); // setting the question
+    const[answer, setAnswer] = useState("");
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <LevelInfo />
+        <Choice />
     </div>
   );
 }

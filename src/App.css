@@ -1,0 +1,55 @@
+
+.App {
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 18px;
+    color: white;
+}
+
+.level-info {
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #ffaaa7;
+    border: 2px #364547 solid;
+    border-radius: 10px;
+}
+
+.level-info h1 {
+    margin: 0;
+}
+
+.level-question {
+    font-size: 22px;
+}
+
+/* Choice */
+
+.choice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5%;
+
+    width: 70%;
+    margin: 30px auto;
+}
+
+.button-choice {
+    cursor: pointer;
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+    padding: 50px;
+    border-radius: 5px;
+    border: none;
+}
